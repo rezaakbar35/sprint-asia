@@ -9,8 +9,7 @@ import (
 type Task struct {
 	gorm.Model
 	TaskTitle   string    `json:"task_title" gorm:"not null"`
-	TodoID      uint      `gorm:"not null"`
-	Todo        Todo      `gorm:"foreignKey:TodoID;references:ID"`
+	TodoID      uint      `json:"todo_id" gorm:"foreignKey:TodoID;references:ID"`
 	IsDone      bool      `json:"is_done" gorm:"not null"`
 	IsUrgent    bool      `json:"is_urgent" gorm:"not null"`
 	IsImportant bool      `json:"is_important" gorm:"not null"`
