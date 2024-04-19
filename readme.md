@@ -15,6 +15,9 @@ This is divided into two sections: client-side and server-side.
 
 ### Server Side
 
+#### Entity Relationship Diagram
+![image](entity-relationship-diagram.png)
+
 1. Start by downloading the Go module in the terminal:
 ```
 $ cd server
